@@ -18,7 +18,9 @@ class QuoteService
         ['Drew Houston', 'Don’t worry about failure, you only have to be right once.'],
         ['Theodore Roosevelt', 'Believe you can and you\'re halfway there.'],
         ['Nelson Mandela', 'It always seems impossible until it\'s done.'],
-        ['Amanda Gorman', 'There is no better compass than compassion.']
+        ['Amanda Gorman', 'There is no better compass than compassion.'],
+        ['Suzy Kassem', 'Doubt kills more dreams than failure ever will.'],
+        ['Walt Disney', 'The best way to get started is to quit talking and begin doing.']
     ];
 
     public function getRandomQuote(): array

@@ -7,8 +7,7 @@ html, body {
 }
 
 .quote {
-    width: 600px;
-    height: auto;
+    width: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,10 +21,30 @@ html, body {
 
 .quoteText {
     font-size: 2rem;
+    text-align: center;
     font-family: Times New Roman, serif;
+}
+
+.quoteSymbol {
+    font-size: 6rem;
+    float: left;
+    padding-right: 1rem;
 }
 
 .author {
     text-align: right;
     padding-top: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .quote {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quote {
+        width: 100%;
+        margin: 0 1rem;
+    }
 }

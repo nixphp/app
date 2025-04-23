@@ -1,4 +1,6 @@
 <?php
+
+use function PHPico\config;
 use function PHPico\s;
 ?>
 
@@ -8,8 +10,15 @@ use function PHPico\s;
     /* @var array $quote */
     [$author, $quoteText] = $quote;
 ?>
+
     <div class="quote">
-        <div class="quoteText"><?= s($quoteText) ?></div>
+        <div class="quoteText">
+            <?php if (config('showQuote', false)): ?>
+                <span class="quoteSymbol">&rdquo;</span>
+            <?php endif; ?>
+            <?= s($quoteText) ?>
+        </div>
         <div class="author">&boxh; <?= s($author) ?></div>
     </div>
+
 <?php $this->endblock('content') ?>
