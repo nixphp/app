@@ -1,3 +1,7 @@
+<?php
+use function PHPico\s;
+?>
+
 <?php $this->setLayout('layout') ?>
 
 <?php $this->block('content');
@@ -5,7 +9,7 @@
     [$author, $quoteText] = $quote;
 ?>
     <div class="quote">
-        <div class="quoteText"><?= $quoteText ?></div>
-        <div class="author">&boxh; <?= $author ?></div>
+        <div class="quoteText"><?= s($quoteText) ?></div>
+        <div class="author">&boxh; <?= s($author) ?></div>
     </div>
 <?php $this->endblock('content') ?>
