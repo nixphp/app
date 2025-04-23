@@ -13,6 +13,12 @@ class QuoteService
         ['Leonard I. Sweet', 'The future is not something we enter. The future is something we create.'],
         ['Nikki Giovanni', 'Mistakes are a fact of life. It is the response to the error that counts.'],
         ['Gloria Steinem', 'Dreaming, after all, is a form of planning.'],
+        ['Margaret Fuller', 'If you have knowledge, let others light their candles in it.'],
+        ['Albert Einstein', 'A person who never made a mistake never tried anything new.'],
+        ['Drew Houston', 'Don’t worry about failure, you only have to be right once.'],
+        ['Theodore Roosevelt', 'Believe you can and you\'re halfway there.'],
+        ['Nelson Mandela', 'It always seems impossible until it\'s done.'],
+        ['Amanda Gorman', 'There is no better compass than compassion.']
     ];
 
     public function getRandomQuote(): array
