@@ -1,0 +1,17 @@
+<?php
+use function PHPico\asset;
+asset()->add('/css/phpico.css');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to your new App!</title>
+    <?= asset()->render('css') ?>
+</head>
+<body>
+    <div class="content">
+        <?= $this->renderBlock('content') ?>
+    </div>
+</body>
+</html>

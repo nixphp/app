@@ -1,0 +1,11 @@
+<?php $this->setLayout('layout') ?>
+
+<?php $this->block('content');
+    /* @var array $quote */
+    [$author, $quoteText] = $quote;
+?>
+    <div class="quote">
+        <div class="quoteText"><?= $quoteText ?></div>
+        <div class="author">&boxh; <?= $author ?></div>
+    </div>
+<?php $this->endblock('content') ?>

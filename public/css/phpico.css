@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: #DDD;
+    font-family: Arial, sans-serif;
+}
+
+.quote {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #303030;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    hyphens: auto;
+}
+
+.quoteText {
+    font-size: 2rem;
+    font-family: Times New Roman, serif;
+}
+
+.author {
+    text-align: right;
+    padding-top: 2rem;
+}
