@@ -13,16 +13,21 @@
         {
             "type": "path",
             "url": "../phpico"
+        },
+        {
+            "type": "path",
+            "url": "../phpico-plugin"
         }
     ],
     "require": {
         "php": ">=8.3",
-        "fkde/phpico": "dev-main"
+        "fkde/phpico": "dev-main",
+        "fkde/phpico-plugin": "dev-main"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
