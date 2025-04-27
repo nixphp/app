@@ -1,21 +1,26 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #202020;
-    color: #DDD;
+    background-color: #1a1a1a;
+    color: #303030;
     font-family: Arial, sans-serif;
 }
 
-.quote {
-    width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #303030;
-    padding: 2rem;
+.wrap {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
     box-sizing: border-box;
-    border-radius: 1rem;
+    hyphens: auto;
+}
+
+.container.quote {
+    margin-top: 1rem;
     hyphens: auto;
 }
 
@@ -36,15 +41,138 @@ html, body {
     padding-top: 2rem;
 }
 
-@media screen and (max-width: 750px) {
-    .quote {
-        width: 400px;
-    }
+hr {
+    margin: 1.5rem 0;
+    border: none;
+    background-color: #606060;
+    height: 1px;
 }
 
-@media screen and (max-width: 400px) {
-    .quote {
-        width: 100%;
-        margin: 0 1rem;
+.grid {
+    display: grid;
+    width: min-content;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.header {
+    width: 100%;
+    min-height: 150px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.logo img {
+    width: 250px;
+    padding: 1rem 0;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card img {
+    width: 20%;
+    margin: 2rem auto;
+}
+
+.image-card .text {
+    padding: 2rem 0;
+    background-color: #EEE;
+}
+
+a {
+    color: #303030;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Forms */
+
+label {
+    font-size: .8rem;
+    padding-right: 1rem;
+    color: #AAA;
+}
+
+input,textarea {
+    background-color: #282828;
+    border: none;
+    padding: 0.5rem .6rem;
+    font-family: Arial, sans-serif;
+    font-size: .8rem;
+    color: #DDD;
+    outline: none;
+    border-radius: .2rem;
+    box-shadow: inset 1px 2px 2px #101010, 0 0 0 rgba(255,255,255,0);
+    transition: box-shadow 1s;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: inset 1px 2px 2px #101010, 0 0 5px rgba(255,255,255,0.3);
+    transition: box-shadow 0.2s;
+}
+
+button {
+    padding: .6rem 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: .7rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    border: none;
+    background-color: #84aa6c;
+    cursor: pointer;
+    color: #FFF;
+}
+
+button:hover {
+    background-color: #668e45;
+}
+
+/* Modifier */
+
+.mt-1{ margin-top: 1rem }
+.mt-2{ margin-top: 2rem }
+
+.p-1 { padding: 1rem }
+.p-2 { padding: 2rem }
+
+.pt-1 { padding-top: 1rem }
+.pt-2 { padding-top: 2rem }
+
+.pb-1 { padding-bottom: 1rem }
+.pb-2 { padding-bottom: 2rem }
+
+.px-1 { padding: 0 1rem }
+.px-2 { padding: 0 2rem }
+
+.py-1 { padding: 1rem 0 }
+.py-2 { padding: 2rem 0 }
+
+.gap-1 { gap: 1rem; }
+.gap-2 { gap: 2rem; }
+.gap-3 { gap: 3rem; }
+
+.text-normal { font-weight: 400 }
+.text-bold { font-weight: 600 }
+.text-bolder { font-weight: 900 }
+
+.text-center { text-align: center }
+
+.flex { display: flex }
+
+@media screen and (min-width: 600px) {
+    .wrap {
+        max-width: 600px;
+        width: calc(100% - 2rem);
     }
 }

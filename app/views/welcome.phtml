@@ -1,5 +1,4 @@
 <?php
-
 use function PHPico\config;
 use function PHPico\s;
 ?>
@@ -11,14 +10,46 @@ use function PHPico\s;
     [$author, $quoteText] = $quote;
 ?>
 
-    <div class="quote">
-        <div class="quoteText">
-            <?php if (config('showQuote', false)): ?>
-                <span class="quoteSymbol">&rdquo;</span>
-            <?php endif; ?>
-            <?= s($quoteText) ?>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/phpico-logo.svg" alt="Logo" />
         </div>
-        <div class="author">&boxh; <?= s($author) ?></div>
     </div>
+
+    <div class="wrap mt-1">
+
+        <div class="container quote p-2">
+            <div class="quoteText">
+                <?php if (config('showQuote', false)): ?>
+                    <span class="quoteSymbol">&rdquo;</span>
+                <?php endif; ?>
+                <?= s($quoteText) ?>
+            </div>
+            <div class="author">&boxh; <?= s($author) ?></div>
+        </div>
+
+        <div class="flex gap-1 mt-1">
+
+            <div class="container">
+                <div class="image-card">
+                    <img src="/images/github.png" alt="Github" />
+                    <a class="text text-center" href="https://github.com/fkde/phpico" target="_blank">Repository</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="image-card">
+                    <img src="/images/docs.png" alt="Documentation" />
+                    <a class="text text-center" href="https://github.com/fkde/phpico/wiki/01.-Introduction" target="_blank">Documentation</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
 
 <?php $this->endblock('content') ?>

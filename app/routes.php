@@ -1,6 +1,10 @@
 <?php
 
-use function PHPico\response;
+use App\Controllers\WebsiteController;
 use function PHPico\route;
 
-route()->add('GET', '/', [\App\Controllers\WebsiteController::class, 'index'], 'home');
+route()->add('GET', '/', [WebsiteController::class, 'index'], 'home');
+route()->add('POST', '/api', [WebsiteController::class, 'api'], 'api');
+
+route()->add('GET', '/contact', [WebsiteController::class, 'contact'], 'contact');
+route()->add('POST', '/contact', [WebsiteController::class, 'contact'], 'contactHandler');
