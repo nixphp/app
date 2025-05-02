@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\WebsiteController;
-use function PHPico\route;
+use function NixPHP\route;
 
 route()->add('GET', '/', [WebsiteController::class, 'index'], 'home');
 route()->add('POST', '/api', [WebsiteController::class, 'api'], 'api');

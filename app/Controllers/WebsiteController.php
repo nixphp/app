@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-use PHPico\Form\Core\Validator;
+use NixPHP\Form\Core\Validator;
 use Psr\Http\Message\ResponseInterface;
-use function PHPico\app;
-use function PHPico\render;
-use function PHPico\request;
+use function NixPHP\app;
+use function NixPHP\render;
+use function NixPHP\request;
 
 class WebsiteController
 {
@@ -19,7 +19,7 @@ class WebsiteController
 
     public function contact(): ResponseInterface
     {
-        $request = app()->request();
+        $request = app()->container()->get('request');
 
         if (request()->getMethod() === 'POST') {
 

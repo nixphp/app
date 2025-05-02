@@ -1,6 +1,6 @@
-# phpico-app
+# NixPHP App
 
-A clean starting point for building applications with [PHPico](https://github.com/fkde/phpico) — the minimal and flexible PHP microframework.
+A clean starting point for building applications with [NixPHP](https://github.com/nixphp/framework) — the minimal and flexible PHP microframework.
 
 > **"As simple as possible, as flexible as necessary."**
 
@@ -9,13 +9,13 @@ A clean starting point for building applications with [PHPico](https://github.co
 ## 🚀 Installation
 
 ```bash
-composer create-project fkde/phpico-app my-app
+composer create-project nixphp/app my-app
 ```
 
 Alternatively, clone the repo manually:
 
 ```bash
-git clone https://github.com/fkde/phpico-app my-app
+git clone https://github.com/nixphp/app my-app
 cd my-app
 composer install
 ```
@@ -26,7 +26,7 @@ Make sure your webserver points to the `/public` directory as document root.
 
 ## 🧰 Requirements
 
-- PHP 8.1+
+- PHP 8.3+
 - Composer
 - A webserver (e.g. Apache, nginx, or PHP’s built-in server)
 
@@ -68,7 +68,7 @@ route()->add('GET', '/', [App\Controllers\HomeController::class, 'index']);
 ```php
 namespace App\Controllers;
 
-use function PHPico\render;
+use function NixPHP\render;
 
 class HomeController
 {
@@ -82,29 +82,29 @@ class HomeController
 3. Create a view in `app/views/home.phtml`:
 
 ```php
-<?php use function PHPico\s; ?>
+<?php use function NixPHP\s; ?>
 
 <h1>Hello, <?= s($name) ?>!</h1>
 ```
 
 ---
 
-## 📦 About PHPico
+## 📦 About NixPHP
 
-This app skeleton is based on the [PHPico microframework](https://github.com/fkde/phpico).  
+This app skeleton is based on the [NixPHP microframework](https://github.com/nixphp/framework).  
 It’s designed to give you a clean starting point — nothing more, nothing less.
 
-To learn more about PHPico and its philosophy, check out the [main documentation](https://github.com/fkde/phpico/wiki).
+To learn more about NixPHP and its philosophy, check out the [main documentation](https://nixphp.github.io/framework/).
 
 ---
 
 ## 🪪 License
 
-MIT License.  
+MIT License.
 See [LICENSE](LICENSE) for details.
 
 ---
 
 Ready to build something awesome?  
-Start hacking with **PHPico**. 🚀
+Start hacking with **NixPHP**. 🚀
 ```

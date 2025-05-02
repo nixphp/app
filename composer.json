@@ -1,6 +1,6 @@
 {
-    "name": "phpico/app",
-    "description": "Starter app for your project when using PHPico",
+    "name": "nixphp/app",
+    "description": "Starter app for your project when using NixPHP",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -12,17 +12,17 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../phpico"
+            "url": "../nixphp"
         },
         {
             "type": "path",
-            "url": "../phpico-forms"
+            "url": "../nixphp-form"
         }
     ],
     "require": {
         "php": ">=8.3",
-        "phpico/framework": "dev-main",
-        "phpico/form": "dev-main"
+        "nixphp/framework": "dev-main",
+        "nixphp/form": "dev-main"
     },
     "autoload": {
         "psr-4": {
