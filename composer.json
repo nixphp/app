@@ -1,5 +1,5 @@
 {
-    "name": "fkde/phpico-app",
+    "name": "phpico/app",
     "description": "Starter app for your project when using PHPico",
     "type": "project",
     "license": "MIT",
@@ -16,13 +16,13 @@
         },
         {
             "type": "path",
-            "url": "../phpico-plugin"
+            "url": "../phpico-forms"
         }
     ],
     "require": {
         "php": ">=8.3",
-        "fkde/phpico": "dev-main",
-        "fkde/phpico-plugin": "dev-main"
+        "phpico/framework": "dev-main",
+        "phpico/form": "dev-main"
     },
     "autoload": {
         "psr-4": {

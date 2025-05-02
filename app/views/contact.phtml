@@ -2,7 +2,7 @@
 
 use function PHPico\config;
 use function PHPico\guard;
-use function PHPico\memory;
+use function PHPico\Form\memory;
 use function PHPico\route;
 use function PHPico\s;
 ?>
@@ -11,28 +11,32 @@ use function PHPico\s;
 
 <?php $this->block('content'); ?>
 
-<div class="container">
+<div class="wrap">
 
-<form action="<?= route('contact') ?>" method="post">
+    <div class="container bg-dark p-2">
 
-    <div class="grid">
-        <label for="firstname">Vorname:</label>
-        <input type="text" name="firstname" value="<?= memory('firstname') ?>" />
+    <form action="<?= route('contact') ?>" method="post">
 
-        <label for="firstname">Nachname:</label>
-        <input type="text" name="lastname" value="<?= memory('lastname') ?>" />
+        <div class="grid">
+            <label for="firstname">Vorname:</label>
+            <input type="text" name="firstname" value="<?= memory('firstname') ?>" />
 
-        <label for="firstname">Nachricht:</label>
-        <textarea name="message" rows="5" cols="50"><?= memory('message') ?></textarea>
+            <label for="firstname">Nachname:</label>
+            <input type="text" name="lastname" value="<?= memory('lastname') ?>" />
+
+            <label for="firstname">Nachricht:</label>
+            <textarea name="message" rows="5" cols="50"><?= memory('message') ?></textarea>
+        </div>
+
+        <input type="hidden" name="_csrf" value="<?= guard()->csrf()->generate()?>" />
+
+        <hr />
+
+        <button>Abschicken</button>
+
+    </form>
+
     </div>
-
-    <input type="hidden" name="_csrf" value="<?= guard()->csrf()->generate()?>" />
-
-    <hr />
-
-    <button>Abschicken</button>
-
-</form>
 
 </div>
 

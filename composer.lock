@@ -4,94 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffad80ac5cb8228b347b6c866d616fc1",
+    "content-hash": "5d6ca29bbc5f511673d29b43b97f95c6",
     "packages": [
-        {
-            "name": "fkde/phpico",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../phpico",
-                "reference": "3034014a528a3e59478a8e14f00208395b756503"
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-pdo": "*",
-                "nyholm/psr7": "^1.8",
-                "nyholm/psr7-server": "^1.1",
-                "php": ">=8.3",
-                "psr/container": "^2.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.1",
-                "psr/http-message": "^2.0",
-                "psr/log": "^3.0"
-            },
-            "require-dev": {
-                "phpspec/prophecy": "^1.3",
-                "phpspec/prophecy-phpunit": "^1.1",
-                "phpunit/phpunit": "^12.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PHPico\\": "src/"
-                },
-                "files": [
-                    "src/functions.php",
-                    "src/view_helpers.php"
-                ]
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Flo Knapp",
-                    "email": "office@florianknapp.de"
-                }
-            ],
-            "description": "PHPico – the ultra-light, functional PHP framework for fast microservices and APIs.",
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
-            "name": "fkde/phpico-plugin",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../phpico-plugin",
-                "reference": "efd155b275b1ae167108a299bf4f6f30dbd4f713"
-            },
-            "require": {
-                "fkde/phpico": "dev-main",
-                "php": ">=8.3"
-            },
-            "type": "phpico-plugin",
-            "autoload": {
-                "psr-4": {
-                    "Plugin\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Flo Knapp",
-                    "email": "office@florianknapp.de"
-                }
-            ],
-            "description": "Skeleton for your first plugin when using PHPico",
-            "transport-options": {
-                "relative": true
-            }
-        },
         {
             "name": "nyholm/psr7",
             "version": "dev-master",
@@ -236,6 +150,114 @@
                 }
             ],
             "time": "2023-11-08T09:30:43+00:00"
+        },
+        {
+            "name": "phpico/form",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../phpico-forms",
+                "reference": "5d99f5be0d745ff21fca82d9c1fee21ea137442d"
+            },
+            "require": {
+                "php": ">=8.3",
+                "phpico/framework": "dev-main"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^12.1",
+                "phpunit/phpunit": "^12.1"
+            },
+            "type": "phpico-plugin",
+            "autoload": {
+                "psr-4": {
+                    "PHPico\\Forms\\": "src/"
+                },
+                "files": [
+                    "src/view_helper.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --colors=always"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flo Knapp",
+                    "email": "office@florianknapp.de"
+                }
+            ],
+            "description": "PHPico Forms Plugin to make form handling easier.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "phpico/framework",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../phpico",
+                "reference": "eebed947257859332417add6025bcb104ae89059"
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "nyholm/psr7": "^1.8",
+                "nyholm/psr7-server": "^1.1",
+                "php": ">=8.3",
+                "psr/container": "^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.1",
+                "psr/http-message": "^2.0",
+                "psr/log": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^12.1",
+                "phpunit/phpunit": "^12.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPico\\": "src/"
+                },
+                "files": [
+                    "src/functions.php",
+                    "src/view_helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/",
+                    "Fixtures\\": "tests/Fixtures/app/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit --colors=always"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flo Knapp",
+                    "email": "office@florianknapp.de"
+                }
+            ],
+            "description": "PHPico – the ultra-light, functional PHP framework for fast microservices and APIs.",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "psr/container",
@@ -509,14 +531,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "fkde/phpico": 20,
-        "fkde/phpico-plugin": 20
+        "phpico/form": 20,
+        "phpico/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.3"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
