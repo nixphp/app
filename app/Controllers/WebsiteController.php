@@ -5,7 +5,7 @@ namespace App\Controllers;
 use NixPHP\Form\Core\Validator;
 use Psr\Http\Message\ResponseInterface;
 use function NixPHP\app;
-use function NixPHP\render;
+use function NixPHP\View\render;
 use function NixPHP\request;
 
 class WebsiteController

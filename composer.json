@@ -12,7 +12,8 @@
     "require": {
         "php": ">=8.3",
         "nixphp/framework": "dev-main",
-        "nixphp/form": "dev-main"
+        "nixphp/form": "dev-main",
+        "nixphp/view": "dev-main"
     },
     "autoload": {
         "psr-4": {

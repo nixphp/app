@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4244e1f327eb89c6dc84a6d4e8e3df29",
+    "content-hash": "dd85f64421bb99e866d3540fa041c2c7",
     "packages": [
         {
             "name": "nixphp/form",
@@ -62,12 +62,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/framework.git",
-                "reference": "4cccd04f6c42853bfd20d7e79a35610c91858318"
+                "reference": "ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/framework/zipball/4cccd04f6c42853bfd20d7e79a35610c91858318",
-                "reference": "4cccd04f6c42853bfd20d7e79a35610c91858318",
+                "url": "https://api.github.com/repos/nixphp/framework/zipball/ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7",
+                "reference": "ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                 "issues": "https://github.com/nixphp/framework/issues",
                 "source": "https://github.com/nixphp/framework/tree/main"
             },
-            "time": "2025-05-03T15:57:46+00:00"
+            "time": "2025-05-03T21:08:37+00:00"
         },
         {
             "name": "nixphp/session",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/session.git",
-                "reference": "5635e226739172ca3806b7e30ef7366510d2a0b7"
+                "reference": "994878e3c087b28e980c96199b23c9e7967e2af4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/session/zipball/5635e226739172ca3806b7e30ef7366510d2a0b7",
-                "reference": "5635e226739172ca3806b7e30ef7366510d2a0b7",
+                "url": "https://api.github.com/repos/nixphp/session/zipball/994878e3c087b28e980c96199b23c9e7967e2af4",
+                "reference": "994878e3c087b28e980c96199b23c9e7967e2af4",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +161,57 @@
                 "issues": "https://github.com/nixphp/session/issues",
                 "source": "https://github.com/nixphp/session/tree/main"
             },
-            "time": "2025-05-03T17:09:26+00:00"
+            "time": "2025-05-03T19:39:40+00:00"
+        },
+        {
+            "name": "nixphp/view",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nixphp/view.git",
+                "reference": "ac97b86c3fc2cabfa7f72496a432c04c4099e300"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nixphp/view/zipball/ac97b86c3fc2cabfa7f72496a432c04c4099e300",
+                "reference": "ac97b86c3fc2cabfa7f72496a432c04c4099e300",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "nixphp/framework": "dev-main",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^12.1",
+                "phpunit/phpunit": "^12.1"
+            },
+            "default-branch": true,
+            "type": "nixphp-plugin",
+            "autoload": {
+                "files": [
+                    "src/view_helper.php"
+                ],
+                "psr-4": {
+                    "NixPHP\\View\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flo Knapp",
+                    "email": "office@florianknapp.de"
+                }
+            ],
+            "description": "NixPHP View Plugin with simple templating. ",
+            "support": {
+                "issues": "https://github.com/nixphp/view/issues",
+                "source": "https://github.com/nixphp/view/tree/main"
+            },
+            "time": "2025-05-03T21:10:52+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -581,7 +631,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "nixphp/form": 20,
-        "nixphp/framework": 20
+        "nixphp/framework": 20,
+        "nixphp/view": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
