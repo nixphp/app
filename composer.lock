@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../nixphp-form",
-                "reference": "959a94154fd7dcf3e1b37adf3789c1e6d5c5389d"
+                "reference": "831a079b72ec6112aed361299c83f77d6f3467cb"
             },
             "require": {
                 "nixphp/framework": "dev-main",
@@ -22,7 +22,7 @@
                 "phpunit/php-code-coverage": "^12.1",
                 "phpunit/phpunit": "^12.1"
             },
-            "type": "phpico-plugin",
+            "type": "nixphp-plugin",
             "autoload": {
                 "psr-4": {
                     "NixPHP\\Form\\": "src/"
@@ -61,7 +61,7 @@
             "dist": {
                 "type": "path",
                 "url": "../nixphp",
-                "reference": "34874f5db73ec956874286797016d7e8c525e085"
+                "reference": "03b6c7890d233f82af1ad719a5087db05bdfeb8e"
             },
             "require": {
                 "ext-json": "*",

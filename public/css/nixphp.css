@@ -60,14 +60,14 @@ hr {
 
 .header {
     width: 100%;
-    min-height: 150px;
+    min-height: 100px;
     background-color: #FFFFFF;
     text-align: center;
 }
 
 .logo img {
-    width: 250px;
-    padding: 1rem 0;
+    width: 200px;
+    padding: 0;
 }
 
 .image-card {

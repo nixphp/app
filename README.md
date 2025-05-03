@@ -94,7 +94,7 @@ class HomeController
 This app skeleton is based on the [NixPHP microframework](https://github.com/nixphp/framework).  
 It’s designed to give you a clean starting point — nothing more, nothing less.
 
-To learn more about NixPHP and its philosophy, check out the [main documentation](https://nixphp.github.io/framework/).
+To learn more about NixPHP and its philosophy, check out the [main documentation](https://nixphp.github.io/docs/).
 
 ---
 
@@ -107,4 +107,3 @@ See [LICENSE](LICENSE) for details.
 
 Ready to build something awesome?  
 Start hacking with **NixPHP**. 🚀
-```
