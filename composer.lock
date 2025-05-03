@@ -4,43 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e0640c3cec1d52e0db482aa1934f00a",
+    "content-hash": "4244e1f327eb89c6dc84a6d4e8e3df29",
     "packages": [
         {
             "name": "nixphp/form",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nixphp/form.git",
+                "reference": "8d542cb56cad50bff98262539ca38b6b12646004"
+            },
             "dist": {
-                "type": "path",
-                "url": "../nixphp-form",
-                "reference": "831a079b72ec6112aed361299c83f77d6f3467cb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/nixphp/form/zipball/8d542cb56cad50bff98262539ca38b6b12646004",
+                "reference": "8d542cb56cad50bff98262539ca38b6b12646004",
+                "shasum": ""
             },
             "require": {
                 "nixphp/framework": "dev-main",
+                "nixphp/session": "dev-main",
                 "php": ">=8.3"
             },
             "require-dev": {
                 "phpunit/php-code-coverage": "^12.1",
                 "phpunit/phpunit": "^12.1"
             },
+            "default-branch": true,
             "type": "nixphp-plugin",
             "autoload": {
-                "psr-4": {
-                    "NixPHP\\Form\\": "src/"
-                },
                 "files": [
                     "src/view_helper.php"
-                ]
-            },
-            "autoload-dev": {
+                ],
                 "psr-4": {
-                    "Tests\\": "tests/"
+                    "NixPHP\\Form\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "phpunit --colors=always"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -51,17 +50,25 @@
                 }
             ],
             "description": "NixPHP Form Plugin to make form handling easier.",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/nixphp/form/issues",
+                "source": "https://github.com/nixphp/form/tree/main"
+            },
+            "time": "2025-05-03T17:09:57+00:00"
         },
         {
             "name": "nixphp/framework",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nixphp/framework.git",
+                "reference": "4cccd04f6c42853bfd20d7e79a35610c91858318"
+            },
             "dist": {
-                "type": "path",
-                "url": "../nixphp",
-                "reference": "03b6c7890d233f82af1ad719a5087db05bdfeb8e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/nixphp/framework/zipball/4cccd04f6c42853bfd20d7e79a35610c91858318",
+                "reference": "4cccd04f6c42853bfd20d7e79a35610c91858318",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -79,27 +86,18 @@
                 "phpunit/php-code-coverage": "^12.1",
                 "phpunit/phpunit": "^12.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "NixPHP\\": "src/"
-                },
                 "files": [
                     "src/functions.php",
                     "src/view_helpers.php"
-                ]
-            },
-            "autoload-dev": {
+                ],
                 "psr-4": {
-                    "Tests\\": "tests/",
-                    "Fixtures\\": "tests/Fixtures/app/"
+                    "NixPHP\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "phpunit --colors=always"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -110,9 +108,60 @@
                 }
             ],
             "description": "NixPHP – the ultra-light, functional PHP framework for fast microservices and APIs.",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/nixphp/framework/issues",
+                "source": "https://github.com/nixphp/framework/tree/main"
+            },
+            "time": "2025-05-03T15:57:46+00:00"
+        },
+        {
+            "name": "nixphp/session",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nixphp/session.git",
+                "reference": "5635e226739172ca3806b7e30ef7366510d2a0b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nixphp/session/zipball/5635e226739172ca3806b7e30ef7366510d2a0b7",
+                "reference": "5635e226739172ca3806b7e30ef7366510d2a0b7",
+                "shasum": ""
+            },
+            "require": {
+                "nixphp/framework": "dev-main",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^12.1",
+                "phpunit/phpunit": "^12.1"
+            },
+            "default-branch": true,
+            "type": "nixphp-plugin",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "NixPHP\\Session\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flo Knapp",
+                    "email": "office@florianknapp.de"
+                }
+            ],
+            "description": "NixPHP Session Plugin for storing data across requests.",
+            "support": {
+                "issues": "https://github.com/nixphp/session/issues",
+                "source": "https://github.com/nixphp/session/tree/main"
+            },
+            "time": "2025-05-03T17:09:26+00:00"
         },
         {
             "name": "nyholm/psr7",
