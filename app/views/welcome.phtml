@@ -1,5 +1,6 @@
 <?php
 use function NixPHP\config;
+use function NixPHP\route;
 use function NixPHP\s;
 ?>
 
@@ -11,9 +12,9 @@ use function NixPHP\s;
 ?>
 
     <div class="header">
-        <div class="logo">
+        <a class="logo" href="<?= route('home') ?>">
             <img src="/images/nixphp-logo.png" alt="Logo" />
-        </div>
+        </a>
     </div>
 
     <div class="wrap mt-1">
