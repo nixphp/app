@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/form.git",
-                "reference": "8d542cb56cad50bff98262539ca38b6b12646004"
+                "reference": "8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/form/zipball/8d542cb56cad50bff98262539ca38b6b12646004",
-                "reference": "8d542cb56cad50bff98262539ca38b6b12646004",
+                "url": "https://api.github.com/repos/nixphp/form/zipball/8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e",
+                "reference": "8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e",
                 "shasum": ""
             },
             "require": {
@@ -32,9 +32,6 @@
             "default-branch": true,
             "type": "nixphp-plugin",
             "autoload": {
-                "files": [
-                    "src/view_helper.php"
-                ],
                 "psr-4": {
                     "NixPHP\\Form\\": "src/"
                 }
@@ -54,7 +51,7 @@
                 "issues": "https://github.com/nixphp/form/issues",
                 "source": "https://github.com/nixphp/form/tree/main"
             },
-            "time": "2025-05-03T17:09:57+00:00"
+            "time": "2025-06-02T10:54:51+00:00"
         },
         {
             "name": "nixphp/framework",
@@ -62,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/framework.git",
-                "reference": "ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7"
+                "reference": "ee9dea43ce3106f2981cf514ee16baf10f217169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/framework/zipball/ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7",
-                "reference": "ba4a73d627aba27ea50a0a8e9fd21f59949a0cb7",
+                "url": "https://api.github.com/repos/nixphp/framework/zipball/ee9dea43ce3106f2981cf514ee16baf10f217169",
+                "reference": "ee9dea43ce3106f2981cf514ee16baf10f217169",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +109,7 @@
                 "issues": "https://github.com/nixphp/framework/issues",
                 "source": "https://github.com/nixphp/framework/tree/main"
             },
-            "time": "2025-05-03T21:08:37+00:00"
+            "time": "2025-05-31T21:07:22+00:00"
         },
         {
             "name": "nixphp/session",
@@ -120,12 +117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/session.git",
-                "reference": "994878e3c087b28e980c96199b23c9e7967e2af4"
+                "reference": "d68e42a97914f45846e897f5935a02f487a7b15a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/session/zipball/994878e3c087b28e980c96199b23c9e7967e2af4",
-                "reference": "994878e3c087b28e980c96199b23c9e7967e2af4",
+                "url": "https://api.github.com/repos/nixphp/session/zipball/d68e42a97914f45846e897f5935a02f487a7b15a",
+                "reference": "d68e42a97914f45846e897f5935a02f487a7b15a",
                 "shasum": ""
             },
             "require": {
@@ -139,9 +136,6 @@
             "default-branch": true,
             "type": "nixphp-plugin",
             "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
                 "psr-4": {
                     "NixPHP\\Session\\": "src/"
                 }
@@ -161,7 +155,7 @@
                 "issues": "https://github.com/nixphp/session/issues",
                 "source": "https://github.com/nixphp/session/tree/main"
             },
-            "time": "2025-05-03T19:39:40+00:00"
+            "time": "2025-05-31T21:10:46+00:00"
         },
         {
             "name": "nixphp/view",
@@ -169,16 +163,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/view.git",
-                "reference": "ac97b86c3fc2cabfa7f72496a432c04c4099e300"
+                "reference": "c5b04ffaff6a3f9c4aac56ee22485bf0aa0244d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/view/zipball/ac97b86c3fc2cabfa7f72496a432c04c4099e300",
-                "reference": "ac97b86c3fc2cabfa7f72496a432c04c4099e300",
+                "url": "https://api.github.com/repos/nixphp/view/zipball/c5b04ffaff6a3f9c4aac56ee22485bf0aa0244d6",
+                "reference": "c5b04ffaff6a3f9c4aac56ee22485bf0aa0244d6",
                 "shasum": ""
             },
             "require": {
-                "ext-pdo": "*",
                 "nixphp/framework": "dev-main",
                 "php": ">=8.3"
             },
@@ -189,9 +182,6 @@
             "default-branch": true,
             "type": "nixphp-plugin",
             "autoload": {
-                "files": [
-                    "src/view_helper.php"
-                ],
                 "psr-4": {
                     "NixPHP\\View\\": "src/"
                 }
@@ -206,12 +196,12 @@
                     "email": "office@florianknapp.de"
                 }
             ],
-            "description": "NixPHP View Plugin with simple templating. ",
+            "description": "NixPHP View Plugin with simple templating.",
             "support": {
                 "issues": "https://github.com/nixphp/view/issues",
                 "source": "https://github.com/nixphp/view/tree/main"
             },
-            "time": "2025-05-03T21:10:52+00:00"
+            "time": "2025-06-01T18:36:40+00:00"
         },
         {
             "name": "nyholm/psr7",
