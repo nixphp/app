@@ -16,13 +16,13 @@ use function NixPHP\route;
 
         <div class="grid">
             <label for="firstname">Vorname:</label>
-            <input type="text" name="firstname" value="<?= memory('firstname') ?>" />
+            <input id="firstname" type="text" name="firstname" value="<?= memory('firstname') ?>" />
 
-            <label for="firstname">Nachname:</label>
-            <input type="text" name="lastname" value="<?= memory('lastname') ?>" />
+            <label for="lastname">Nachname:</label>
+            <input id="lastname" type="text" name="lastname" value="<?= memory('lastname') ?>" />
 
-            <label for="firstname">Nachricht:</label>
-            <textarea name="message" rows="5" cols="50"><?= memory('message') ?></textarea>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="5" cols="50"><?= memory('message') ?></textarea>
         </div>
 
         <input type="hidden" name="_csrf" value="<?= guard()->csrf()->generate()?>" />
