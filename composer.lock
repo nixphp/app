@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/form.git",
-                "reference": "8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e"
+                "reference": "7951019bc0d927ef7d169b685dab20afddf6cdd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/form/zipball/8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e",
-                "reference": "8a951007e03fa305cb3e1a02ea2f2c3c02a05a5e",
+                "url": "https://api.github.com/repos/nixphp/form/zipball/7951019bc0d927ef7d169b685dab20afddf6cdd1",
+                "reference": "7951019bc0d927ef7d169b685dab20afddf6cdd1",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "issues": "https://github.com/nixphp/form/issues",
                 "source": "https://github.com/nixphp/form/tree/main"
             },
-            "time": "2025-06-02T10:54:51+00:00"
+            "time": "2025-07-08T22:23:16+00:00"
         },
         {
             "name": "nixphp/framework",
@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nixphp/framework.git",
-                "reference": "ee9dea43ce3106f2981cf514ee16baf10f217169"
+                "reference": "f5fc0a6d8b7245b9b7eb87e6407d44c8d4c9b822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nixphp/framework/zipball/ee9dea43ce3106f2981cf514ee16baf10f217169",
-                "reference": "ee9dea43ce3106f2981cf514ee16baf10f217169",
+                "url": "https://api.github.com/repos/nixphp/framework/zipball/f5fc0a6d8b7245b9b7eb87e6407d44c8d4c9b822",
+                "reference": "f5fc0a6d8b7245b9b7eb87e6407d44c8d4c9b822",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,6 @@
                 "nyholm/psr7-server": "^1.1",
                 "php": ">=8.3",
                 "psr/container": "^2.0",
-                "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.1",
                 "psr/http-message": "^2.0",
                 "psr/log": "^3.0"
@@ -109,7 +108,7 @@
                 "issues": "https://github.com/nixphp/framework/issues",
                 "source": "https://github.com/nixphp/framework/tree/main"
             },
-            "time": "2025-05-31T21:07:22+00:00"
+            "time": "2025-07-26T20:13:45+00:00"
         },
         {
             "name": "nixphp/session",
@@ -401,59 +400,6 @@
                 "source": "https://github.com/php-fig/container"
             },
             "time": "2023-09-22T11:11:30+00:00"
-        },
-        {
-            "name": "psr/http-client",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-client.git",
-                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
-                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0 || ^8.0",
-                "psr/http-message": "^1.0 || ^2.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP clients",
-            "homepage": "https://github.com/php-fig/http-client",
-            "keywords": [
-                "http",
-                "http-client",
-                "psr",
-                "psr-18"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/http-client"
-            },
-            "time": "2023-09-23T14:17:50+00:00"
         },
         {
             "name": "psr/http-factory",
