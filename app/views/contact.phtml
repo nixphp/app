@@ -1,0 +1,40 @@
+<?php
+use function NixPHP\Form\csrf;
+use function NixPHP\Form\memory;
+use function NixPHP\route;
+?>
+
+<?php $this->setLayout('layout') ?>
+
+<?php $this->block('content'); ?>
+
+<div class="wrap">
+
+    <div class="container bg-dark p-2">
+
+    <form action="<?= route('contact') ?>" method="post">
+
+        <div class="grid">
+            <label for="firstname">Vorname:</label>
+            <input id="firstname" type="text" name="firstname" value="<?= memory('firstname') ?>" />
+
+            <label for="lastname">Nachname:</label>
+            <input id="lastname" type="text" name="lastname" value="<?= memory('lastname') ?>" />
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="5" cols="50"><?= memory('message') ?></textarea>
+        </div>
+
+        <input type="hidden" name="_csrf" value="<?= csrf()->generate() ?>" />
+
+        <hr />
+
+        <button>Abschicken</button>
+
+    </form>
+
+    </div>
+
+</div>
+
+<?php $this->endblock('content') ?>

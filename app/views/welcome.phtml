@@ -1,0 +1,52 @@
+<?php
+use function NixPHP\config;
+use function NixPHP\route;
+use function NixPHP\View\s;
+?>
+
+<?php $this->setLayout('layout') ?>
+
+<?php $this->block('content');
+    /* @var array $quote */
+    [$author, $quoteText] = $quote;
+?>
+
+    <div class="header">
+        <a class="logo" href="<?= route('home') ?>">
+            <img src="/images/nixphp-logo.png" alt="Logo" />
+        </a>
+    </div>
+
+    <div class="wrap mt-1">
+
+        <div class="container quote p-2">
+            <div class="quoteText">
+                <?php if (config('showQuote', false)): ?>
+                    <span class="quoteSymbol">&rdquo;</span>
+                <?php endif; ?>
+                <?= s($quoteText) ?>
+            </div>
+            <div class="author">&boxh; <?= s($author) ?></div>
+        </div>
+
+        <div class="flex gap-1 mt-1">
+
+            <div class="container">
+                <div class="image-card">
+                    <img src="/images/github.png" alt="Github" />
+                    <a class="text text-center" href="https://github.com/nixphp/framework" target="_blank">Repository</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="image-card">
+                    <img src="/images/docs.png" alt="Documentation" />
+                    <a class="text text-center" href="https://nixphp.github.io/docs" target="_blank">Documentation</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<?php $this->endblock('content') ?>

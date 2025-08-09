@@ -1,0 +1,18 @@
+<?php
+use function NixPHP\View\asset;
+asset()->add('/css/nixphp.css');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to your new App!</title>
+    <?= asset()->render('css') ?>
+</head>
+<body>
+    <div class="content">
+        <?= $this->renderBlock('content') ?>
+    </div>
+    <?= asset()->render('js') ?>
+</body>
+</html>
