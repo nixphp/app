@@ -1,3 +1,21 @@
+> [!IMPORTANT]
+> **NixPHP is now NAF — "Not Another Framework".**
+>
+> This package continues as **`naf/app`**:
+> [github.com/nafphp/app](https://github.com/nafphp/app) ·
+> [documentation](https://nafphp.github.io/docs/) ·
+> [what changed and how to move](https://nafphp.github.io/docs/upgrading-from-nixphp/)
+>
+> ```bash
+> composer require naf/app
+> ```
+>
+> The old name collided with [NixOS](https://nixos.org) down to the shell, where the
+> CLI binary was literally `nix`. This repository is archived and receives no further
+> releases; `nixphp/app` stays on Packagist so existing installations keep working.
+>
+---
+
 # NixPHP App
 
 A clean starting point for building applications with [NixPHP](https://github.com/nixphp/framework) — the minimal and flexible PHP microframework.
