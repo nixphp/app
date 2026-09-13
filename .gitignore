@@ -2,3 +2,4 @@
 logs/
 storage/
 vendor/
+.DS_Store
