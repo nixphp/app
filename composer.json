@@ -1,5 +1,6 @@
 {
     "name": "nixphp/app",
+    "abandoned": "naf/app",
     "description": "Starter app for your project when using NixPHP",
     "type": "project",
     "license": "MIT",
